@@ -1,5 +1,5 @@
 const express = require("express");
-app.use(cors({ origin: 'https://your-frontend-render-url' }));
+app.use(cors({ origin: 'https://fullstack-manage-1.onrender.com' }));
 
 const dotenv = require("dotenv");
 const path = require("path");
