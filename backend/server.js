@@ -1,5 +1,6 @@
 const express = require("express");
-const cors = require("cors");
+app.use(cors({ origin: 'https://your-frontend-render-url' }));
+
 const dotenv = require("dotenv");
 const path = require("path");
 
