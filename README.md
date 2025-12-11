@@ -1,31 +1,36 @@
+Berikut versi README-mu yang sudah dirapikan dan rapi secara format Markdown:
+
+---
+
 # Fullstack Project: Next.js + Node.js + MySQL
 
-> Fullstack project dengan frontend React (Next.js + TypeScript) dan backend Node.js + Express + MySQL.  
+> Fullstack project dengan frontend React (Next.js + TypeScript) dan backend Node.js + Express + MySQL.
 > Fitur: login/register, role-based access (user/admin), dashboard user & admin, employee CRUD dengan upload foto (jpg/jpeg, max 300KB). UI: Bootstrap 5.
 
+---
+
+## Fitur
+
+* Login & Register
+* Role-based access:
+
+  * **User**: dashboard, list/add employees
+  * **Admin**: dashboard, user management (CRUD)
+* Employee CRUD:
+
+  * Upload foto jpg/jpeg ≤ 300KB
+* Bootstrap 5 responsive UI
+* JWT Authentication
 
 ---
 
-##  Fitur
-
-- Login & Register
-- Role-based access:
-  - **User**: dashboard, list/add employees
-  - **Admin**: dashboard, user management (CRUD)
-- Employee CRUD:
-  - Upload foto jpg/jpeg ≤ 300KB
-- Bootstrap 5 responsive UI
-- JWT Authentication
-
----
-
-##  Backend Setup (Node.js + Express + MySQL)
+## Backend Setup (Node.js + Express + MySQL)
 
 1. Masuk folder backend:
+
    ```bash
    cd backend
-````
-
+   ```
 2. Install dependencies:
 
    ```bash
@@ -58,7 +63,7 @@
 
 ---
 
-##  Frontend Setup (Next.js + TypeScript)
+## Frontend Setup (Next.js + TypeScript)
 
 1. Masuk folder frontend:
 
@@ -79,17 +84,19 @@
    Frontend default di `http://localhost:3000`.
 
 ---
+
 ### Testing singkat
 
 * Buka [http://localhost:3000](http://localhost:3000)
-* Register user baru -> login
-* **Default admin account:**  
-  - Email: `admin@gmail.com`  
-  - Password: `admin123`
+* Register user baru → login
+* **Default admin account:**
+
+  * Email: `admin@gmail.com`
+  * Password: `admin123`
 
 ---
 
-##  Login & Role Admin
+## Login & Role Admin
 
 * User baru otomatis role `user`.
 * Untuk membuat admin, update role di MySQL:
@@ -101,15 +108,5 @@
 
   * Admin → redirect ke `/dashboard/admin`
   * User → redirect ke `/dashboard`
-
----
-
-##  Notes / Tips
-
-* Jangan push `.env` ke GitHub
-* Folder `uploads/` bisa di-ignore di `.gitignore`
-* UI menggunakan Bootstrap 5 + responsive cards
-* Backend validasi upload file & size
-* JWT secret harus aman di produksi
-
+  
 ---
