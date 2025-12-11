@@ -1,0 +1,14 @@
+import "../styles/global.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import type { AppProps } from "next/app";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { useState } from "react";
+
+export default function App({ Component, pageProps }: AppProps) {
+  const [qc] = useState(() => new QueryClient());
+  return (
+    <QueryClientProvider client={qc}>
+      <Component {...pageProps} />
+    </QueryClientProvider>
+  );
+}
